@@ -1,0 +1,22 @@
+Hello this is <span [style.color]="inputelement.value==='yes'?'red':''">{{name}}</span>
+<br />
+<br />
+<span [class.awesome-text]="inputelement.value=='yes'">
+    Is it awesome ?
+</span>
+
+<input type="text" #inputelement (keyup)="0" />
+
+<button [disabled]="inputelement.value=='yes'"></button>
+<h1 (click)="showdetail()">
+    {{contact.firstname + contact.lastname}}
+</h1>
+
+<br />
+
+<input type="text" [(ngModel)] ="contact.firstname"  />
+
+<div *ngIf="showdetails===true"  >
+    Email: {{contact.Email}}<br />
+    Phone: {{contact.phone}}
+</div>
