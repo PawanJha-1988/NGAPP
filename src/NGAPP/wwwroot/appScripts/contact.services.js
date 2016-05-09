@@ -15,6 +15,9 @@ var ContactService = (function () {
     ContactService.prototype.getContact = function () {
         return Promise.resolve(mock_contact_1.CONTACTS);
     };
+    ContactService.prototype.insertContact = function (contact) {
+        Promise.resolve(mock_contact_1.CONTACTS).then(function (contacts) { return contacts.push(contact); });
+    };
     ContactService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [])
