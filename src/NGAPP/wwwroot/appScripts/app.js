@@ -15,6 +15,7 @@ var user_1 = require('./user');
 var contactlist_Component_1 = require('./contactlist.Component');
 var new_contact_1 = require('./new-contact');
 var new_form_contact_1 = require('./new-form-contact');
+var new_formbuilder_contact_1 = require('./new-formbuilder-contact');
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -29,6 +30,7 @@ var AppComponent = (function () {
             { path: '/contact-list', component: contactlist_Component_1.ContactListComponent, name: 'Contact-List', useAsDefault: true },
             { path: '/new-contact', component: new_contact_1.NewContactComponent, name: 'New-Contact' },
             { path: '/new-form-contact', component: new_form_contact_1.NewFormContactComponent, name: 'New-Contact-form' },
+            { path: '/new-formbuilder-contact', component: new_formbuilder_contact_1.NewFormBuilderContactComponent, name: 'New-Contact-form-builder' },
             //{ path: '/new-contact/:lastname', component: NewContactComponent, name: 'New-Contactfromcontact' },
             { path: '*', component: user_1.UserComponent }
         ]), 
