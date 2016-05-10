@@ -15,7 +15,8 @@ var ContactComponent = (function () {
         this.contact = null;
     }
     ContactComponent.prototype.onCreateNew = function () {
-        this._router.navigate(["New-Contact", { lastname: this.contact.lastname }]);
+        //this._router.navigate(["New-Contact", { lastname: this.contact.lastname }]);
+        this._router.navigate(["New-Contact-form", { lastname: this.contact.lastname }]);
     };
     ContactComponent = __decorate([
         core_1.Component({

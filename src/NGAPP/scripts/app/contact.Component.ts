@@ -39,6 +39,7 @@ export class ContactComponent {
     public contact: Contact = null;
     constructor(private _router: Router) { }
     public onCreateNew() {
-        this._router.navigate(["New-Contact", { lastname: this.contact.lastname }]);
+        //this._router.navigate(["New-Contact", { lastname: this.contact.lastname }]);
+        this._router.navigate(["New-Contact-form", { lastname: this.contact.lastname }])
     }
 }
