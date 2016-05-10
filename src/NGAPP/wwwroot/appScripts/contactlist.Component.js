@@ -29,7 +29,7 @@ var ContactListComponent = (function () {
     ContactListComponent = __decorate([
         core_1.Component({
             selector: 'contactlist',
-            template: "\n            <ul>\n                <li *ngFor=\"#contact of contactlist\" (click)=\"onSelect(contact)\">\n                    {{contact.firstname+\"   \"+contact.lastname}}\n                </li>    \n            </ul>\n            <contact *ngIf='selectedContact !==null' [contact] = \"selectedContact\"> </contact>\n            ",
+            template: "\n            <ul>\n                <li *ngFor=\"#contact of contactlist\" (click)=\"onSelect(contact)\">\n                    {{contact.firstname+\"   \"+contact.lastname | uppercase}}\n                </li>    \n            </ul>\n            <contact *ngIf='selectedContact !==null' [contact] = \"selectedContact\"> </contact>\n            ",
             providers: [contact_services_1.ContactService],
             directives: [contact_Component_1.ContactComponent]
         }), 

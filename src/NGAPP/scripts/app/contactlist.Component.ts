@@ -8,7 +8,7 @@ import {OnInit} from 'angular2/core';
     template: `
             <ul>
                 <li *ngFor="#contact of contactlist" (click)="onSelect(contact)">
-                    {{contact.firstname+"   "+contact.lastname}}
+                    {{contact.firstname+"   "+contact.lastname | uppercase}}
                 </li>    
             </ul>
             <contact *ngIf='selectedContact !==null' [contact] = "selectedContact"> </contact>
